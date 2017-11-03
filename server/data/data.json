@@ -1,0 +1,44 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "itemName": "Sun Glasses",
+            "itemDescription": "A pair of glasses to prevent the sun from messing with your eyes.",
+            "price": 50.00,
+            "pictures": [
+                "https://images-na.ssl-images-amazon.com/images/I/51R-odlJwKL._UL1500_.jpg",
+                "https://images-na.ssl-images-amazon.com/images/I/51RLYUCRItL._SX355_.jpg"
+            ]
+        },
+        {
+            "id": 2,
+            "itemName": "Batman Hat",
+            "itemDescription": "A hat that was inspired by the World's Greatest Detective.",
+            "price": 22.99,
+            "pictures": [
+                "https://target.scene7.com/is/image/Target/52446353?wid=325&hei=325&qlt=80&fmt=pjpeg"
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsq61xNE3uGWFnG2vf-mFQaDT9raqBaLIe6gApJy5Zqfm3rpR78A",
+            ]
+        },
+        {
+            "id": 3,
+            "itemName": "PNY 8 GB Laptop RAM",
+            "itemDescription": "2 4 GB RAM cards for a laptop ready to plug and play.",
+            "price": 79.99,
+            "pictures": [
+                "http://images.highspeedbackbone.net/skuimages/large/P56-7100-chicklet00-aa.jpg",
+                "https://images-na.ssl-images-amazon.com/images/I/91W5teVgWQL._SY355_.jpg"
+            ]
+        },
+        {
+            "id": 4,
+            "itemName": "Xbox One Controller Wireless",
+            "itemDescription": "Microsoft's own Xbox One Controller that is wireless. DOES NOT COME WITH A WIRELESS ADAPTER.",
+            "price": 49.99,
+            "pictures": [
+                "https://compass-ssl.xbox.com/assets/0a/80/0a80b7fa-edad-4bdb-8d3f-0ee08816b415.jpg?n=X1-Wireless-Controller-Green-orange_gallery_1056x594_01.jpg",
+                "https://i5.walmartimages.com/asr/eca823ed-1225-4ad5-b28b-405a0c6c6425_1.14f03f0d5cf1c71934992827c62ebac4.jpeg"
+            ]
+        }
+    ]
+}

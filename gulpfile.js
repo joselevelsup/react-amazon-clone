@@ -2,7 +2,12 @@ var gulp = require("gulp"),
     babel = require("gulp-babel"),
     nodemon = require("gulp-nodemon");
 
-gulp.task("dev", ["build"], function(){
+gulp.task("json-output", function(){
+    gulp.src("server/**/**.json")
+        .pipe(gulp.dest("./build"));
+})
+
+gulp.task("dev", ["build", "json-output"], function(){
     nodemon({
         script: 'build/server.js', 
         ext: 'js', 

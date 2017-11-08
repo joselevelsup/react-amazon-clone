@@ -15,7 +15,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: 'site/index.html',
+            template: 'index.html',
             filename: 'index.html',
             inject: 'body'
         }),
@@ -30,20 +30,28 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: "babel-loader",
                 query: {
-                    presets: ["env", "react"]
+                    presets: ["env", "es2015", "react", "stage-3"]
                 }
+            },
+            {
+                test: /\.css$/,
+                loaders: ExtractTextPlugin.extract('css-loader!sass-loader')             
             },
             {
                 test: /\.scss$/,
                 loader: ExtractTextPlugin.extract('css-loader!sass-loader')                
+            },
+            {
+                test: /\.(ttf|eot|woff|woff2)$/,
+                loader: 'file-loader'
+            },
+            {
+                test: /\.svg$/,
+                loader: 'svg-inline-loader'
             }
         ]
     },
     stats: {
         colors: true
-    },
-    devServer: {
-        contentBase: "./site",
-        port: 8081
     }
 };

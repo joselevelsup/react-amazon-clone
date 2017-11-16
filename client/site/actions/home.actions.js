@@ -1,3 +1,5 @@
+import axios from "axios";
+
 import {
     FETCHING_HOME_DATA,
     FETCHING_HOME_SUCCESS,
@@ -7,12 +9,9 @@ import {
 export function homeToDispatch(){
     return (dispatch) => {
         dispatch(gettingHomeData());
-        fetch("/api/items")
-          .then(res => res.json())
-          .then((data) => {
-            dispatch(gotHomeData(data))
-          })
-          .catch(err => dispatch(failedToGetHomeData(err)))
+        axios.get("/api/items").then((resp) => {
+            dispatch(gotHomeData(resp.data))
+        }).catch(err => dispatch(failedToGetHomeData(err)))
     }
 }
 

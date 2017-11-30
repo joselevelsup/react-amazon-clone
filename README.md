@@ -9,13 +9,11 @@ Currently setup:
 - Compiling React ES6 to a bundled JS file
 - Server to show the app when building
 - Dev server with Hot Reloading
-- Finish my changes
-- Push my commits to GitHub
-- Open a pull request
+- Include React Redux and API calls to server
+- Seperate Webpack to different files
 
 Todo: 
 - Style it up with Bootstrap and custom components
 - Make API endpoints on the server
-- Seperate Webpack to a Config, Dev, and Prod file
-- Include React Redux and API calls to server
+- Search
 - Build for Production

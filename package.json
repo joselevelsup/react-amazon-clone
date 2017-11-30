@@ -19,6 +19,8 @@
     "bootstrap": "^3.3.7",
     "express": "^4.16.2",
     "glob": "^7.1.2",
+    "node-sass": "^4.7.2",
+    "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-bootstrap": "^0.31.5",
     "react-dom": "^16.0.0",

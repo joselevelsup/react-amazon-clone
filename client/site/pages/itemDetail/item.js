@@ -18,17 +18,27 @@ function mapDispatchToProps(dispatch){
 
 class ItemComponent extends React.Component{
 
-    componentDidMount(){
+    componentWillMount(){
         const id = this.props.match.params.id;
         this.props.getItemData(id);
+    }
+
+    changeToCurrency(price){
+        return "$"+price;
     }
 
     render(){
         const { resp, isFetching } = this.props;
         const item = resp.data;
-        return (
-            <DisplayItem name={item.itemName} description={item.itemDescription} pictures={item.pictures} />
-        )
+        if(resp.isFetching == false){
+            return (
+                <DisplayItem name={item.itemName} description={item.itemDescription} pictures={item.pictures} price={this.changeToCurrency(item.price)} />
+            )
+        } else {
+            return (
+                <div>Failed to get data</div>
+            )
+        }
     }
 }
 

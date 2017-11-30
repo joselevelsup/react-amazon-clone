@@ -1,0 +1,45 @@
+div.preview{
+    height: 150px;
+    width: auto;
+    // position: relative;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    &:hover{
+        box-shadow:  2px 2px 2px 1px rgba(73, 73, 73, 0.2);
+        border-color: grey;
+    }
+}
+
+
+div.bigPreview{
+    height: 250px;
+    width: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 55px;
+
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.panel-default > .panel-heading{
+    background-color: white;
+    border-bottom: none;
+}
+
+span.priceBig{
+    font-size: 25px;
+    font-style: italic;
+}

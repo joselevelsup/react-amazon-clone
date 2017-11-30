@@ -4,6 +4,7 @@ import {
     Col,
     Thumbnail
 } from "react-bootstrap";
+import PropTypes from "prop-types";
 
 export default class Items extends React.Component{
 
@@ -24,4 +25,12 @@ export default class Items extends React.Component{
             </Col>
         );
     }
+}
+
+Items.propTypes = {
+    id: PropTypes.number,
+    name: PropTypes.string,
+    description: PropTypes.string,
+    price: PropTypes.number,
+    pictures: PropTypes.array
 }

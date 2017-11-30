@@ -2,7 +2,7 @@ import path from "path";
 
 import apiRouter from "./api/handler";
 
-module.exports = (app) => {
+export default (app) => {
     app.use("/api", apiRouter); 
 
     app.get("*", (req, res) => {

@@ -12,9 +12,7 @@ export function itemRetrieve(id){
         
         axios.get("/api/item/"+id).then((resp) => {
             dispatch(gotItemData(resp.data));
-        }).catch((err) => {
-            dispatch(failedItemData(err));
-        });
+        }).catch(err => dispatch(failedItemData(err)));
     }
 }
 

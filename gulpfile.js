@@ -15,7 +15,9 @@ gulp.task("dev", ["build", "json-output"], function(){
         ext: 'js', 
         watch: "server",
         tasks: ["build"],
-        env: { 'NODE_ENV': 'development' }
+        env: { 
+            'NODE_ENV': 'development' 
+        }
       })
 })
 

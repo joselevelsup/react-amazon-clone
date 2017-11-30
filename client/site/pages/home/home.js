@@ -29,7 +29,7 @@ class HomeComponent extends React.Component{
         );
         return (
             <div>
-                <Slideshow />
+                {/*<Slideshow />*/}
                 { resp.error && <p>Failed to load items</p> }
                 <Grid>
                     <Row>
